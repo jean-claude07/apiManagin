@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  formation: MyString
+  etude: MyString
+  experience: MyText
+
+two:
+  formation: MyString
+  etude: MyString
+  experience: MyText

@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+   <style>
+    * {
+        padding: 0;
+        border: none;
+        outline: none;
+    }
+    .body-content{
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 0 10px 40px 10px;
+        background: #fff;
+        box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+    }
+
+    h2 {
+    margin-top: 35px;
+    text-align: center;
+    }
+
+    #body-content:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+    .clear{
+        padding: 10px
+    }
+
+    .button {
+        background: #1bb1dc;
+        border: 0;
+        border-radius: 3px;
+        padding: 8px 30px;
+        color: #fff;
+        transition: 0.3s;
+        outline: none;
+    }
+    
+    body {
+        background: #fff;
+        color: #444;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .container{
+        box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+        max-height: 20px;
+        border-radius: 50px;
+    }
+
+    .stro{
+        color: red;
+    }
+
+    a {
+        color: #1bb1dc;
+        transition: 0.5s;
+        }
+
+        a:hover,
+        a:active,
+        a:focus {
+        color: #0a98c0;
+        outline: none;
+        text-decoration: none;
+    }
+
+    </style>
+  </head>
+  <body class="body">
+    <div class="body-content">
+        <div class="clear"></div>
+        <div>
+            <h2>Bonjour, <code> &nbsp; </code> <strong><%= @recruteur.nom %>  <%= @recruteur.prenom %></h2>
+        </div>
+        <div class="clear"></div>
+        <div>
+            <p>
+                Notre cite assure et garantie la securitée, la confidentialitée de vos donnée personnel
+            </p>
+        </div>
+        <div class="clear"></div>
+        <div>
+            <p>
+                Votre mot de passe sur <strong class="stro">S.L.M-I </strong> est :
+            </p>
+            <div class="clear"></div>
+            <div class="container">
+                <%= @recruteur.password_digest %>
+            </div>
+            <div class="clear"></div>
+            <br/>
+        </div>
+        <div class="clear"></div>
+        <div>
+            <a href="http://localhost:3000/candidat" class="button"> click moi </a>
+        </div>
+        <div class="clear"></div>
+        <div>
+            <p>
+                <strong class="stro"> S.L.M-I </strong> vous remerci de votre confience,,..
+            </p>
+        </div>
+        <div class="clear"></div>
+    </div>
+  </body>
+</html>

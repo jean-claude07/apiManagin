@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contact: MyString
+  poste: MyString
+  email: MyString
+  reference: MyString
+  etablisment: MyString
+  contrat: MyString
+  province: MyString
+  libelle: MyString
+  pretention: MyString
+  description: MyText
+  date_limite: MyString
+  profil_rechercher: MyText
+
+two:
+  contact: MyString
+  poste: MyString
+  email: MyString
+  reference: MyString
+  etablisment: MyString
+  contrat: MyString
+  province: MyString
+  libelle: MyString
+  pretention: MyString
+  description: MyText
+  date_limite: MyString
+  profil_rechercher: MyText
